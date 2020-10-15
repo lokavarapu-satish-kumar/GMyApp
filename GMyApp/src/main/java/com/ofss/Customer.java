@@ -10,6 +10,7 @@ public Customer() {
 public String getCustomerName() {
 	return customerName;
 }
+
 public Customer(String customerName, String customerLocation) {
 	super();
 	this.customerName = customerName;
@@ -23,6 +24,10 @@ public String getCustomerLocation() {
 }
 public void setCustomerLocation(String customerLocation) {
 	this.customerLocation = customerLocation;
+}
+@Override
+public String toString() {
+	return "Customer [customerName=" + customerName + ", customerLocation=" + customerLocation + "]";
 }
 
 }
